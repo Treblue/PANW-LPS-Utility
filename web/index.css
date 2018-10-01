@@ -1,0 +1,64 @@
+body {
+    width: 100vw;
+    min-height: 100vh;
+    height: 100%;
+}
+
+.hero, .modal-background {
+    -webkit-app-region: drag;
+}
+
+.hero-body {
+    text-align: center;
+}
+
+section {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+section input::-webkit-input-placeholder {
+    color: hsl(0, 0%, 21%) !important;
+    opacity: 1 !important;
+}
+
+section .icon {
+    color: hsl(0, 0%, 21%) !important;
+    opacity: 1 !important;
+}
+
+section .label {
+    color: white;
+}
+
+section .help {
+    color: white;
+}
+
+.notification {
+    margin-bottom: 25px;
+}
+
+.message.is-success .message-body {
+    overflow-x: scroll;
+    padding: 0px !important;
+}
+
+.message.is-success .message-body .table {
+    width: 100%;
+}
+
+.ready {
+    margin-bottom: 25px;
+}
+
+.fa-spinner {
+    animation-name: rotate;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rotate {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

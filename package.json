@@ -1,0 +1,22 @@
+{
+  "productName": "LPS Utility",
+  "name": "lpsutility",
+  "version": "6.0.0",
+  "description": "A user-friendly tool for running and aggregating large, scalable PANW LPS reports.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "package-mac": "electron-packager . --overwrite --platform=darwin --arch=x64 --icon=assets/icons/mac/icon.icns --prune=true --out=release-builds",
+    "package-win": "electron-packager . \"LPS Utility\" --overwrite --platform=win32 --arch=ia32 --icon=assets/icons/win/icon.ico --prune=true --out=release-builds --version-string.CompanyName=Treblue --version-string.FileDescription=LPSUtility --version-string.ProductName=\"LPSUtility\"",
+    "package-linux": "electron-packager . \"LPS Utility\" --overwrite --platform=linux --arch=x64 --icon=assets/icons/png/1024x1024.png --prune=true --out=release-builds"
+  },
+  "author": "Treblue",
+  "dependencies": {
+    "jquery": "^3.3.1",
+    "ssh2": "^0.6.1"
+  },
+  "devDependencies": {
+    "electron": "^2.0.8",
+    "electron-packager": "^12.1.1"
+  }
+}

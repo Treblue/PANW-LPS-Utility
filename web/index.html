@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Palo Alto Networks - LPS Utility</title>
+    <link rel="stylesheet" href="./fontawesome/css/all.min.css"/>
+    <link rel="stylesheet" href="bulma.min.css"/>
+    <link rel="stylesheet" href="index.css"/>
+</head>
+<body class="has-background-grey-darker">
+<div class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-content">
+        <article class="message is-info">
+            <div class="message-header"></div>
+            <div class="message-body"></div>
+        </article>
+    </div>
+</div>
+<section class="hero has-background-grey-darker has-text-white is-small">
+    <div class="hero-body">
+        <div class="container">
+            <h1 class="title has-text-white">Palo Alto Networks</h1>
+            <h2 class="subtitle has-text-light">LPS Utility</h2>
+        </div>
+    </div>
+</section>
+<section class="form-parameters columns is-mobile">
+    <div class="column">
+        <div class="field">
+            <label class="label">Number of Samples</label>
+            <div class="control">
+                <input class="input" type="text" placeholder="360 (one hour)" name="samples" default="360">
+            </div>
+            <p class="help">10 seconds pass between each sample</p>
+        </div>
+    </div>
+    <div class="column">
+        <div class="field">
+            <label class="label">Connection Timeout</label>
+            <div class="control">
+                <input class="input" type="text" placeholder="60 (seconds)" name="timeout" default="60">
+            </div>
+            <p class="help">How long should we wait for a handshake?</p>
+        </div>
+    </div>
+    <!--<div class="column is-4">
+        <label class="label">Device Type</label>
+        <div class="field">
+            <div class="control">
+                <label class="radio has-text-white">
+                    <input type="radio" name="device" value="fw" checked>
+                    Firewall
+                </label>
+                <label class="radio has-text-white">
+                    <input type="radio" name="device" value="cms">
+                    Panorama
+                </label>
+            </div>
+        </div>
+    </div>-->
+</section>
+<section class="form-logging columns is-mobile">
+    <div class="column">
+        <div class="field">
+            <label class="label">Log Retention</label>
+            <div class="control">
+                <input class="input" type="text" placeholder="90 (days)" name="days" default="90">
+            </div>
+            <p class="help">How long do you need to keep your logs?</p>
+        </div>
+    </div>
+    <div class="column">
+        <div class="field">
+            <label class="label">Log Size</label>
+            <div class="control">
+                <input class="input" type="text" placeholder="360 (bytes)" name="size" default="360">
+            </div>
+            <p class="help">360 = Panorama, 1500 = Logging Service</p>
+        </div>
+    </div>
+</section>
+<section class="form-credentials columns is-mobile">
+    <div class="column is-4">
+        <div class="field">
+            <label class="label">Username</label>
+            <div class="control has-icons-left">
+                <input class="input" type="text" placeholder="admin" name="username" default="admin">
+                <span class="icon is-small">
+                    <i class="fas fa-user-alt"></i>
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class="column is-8">
+        <div class="field">
+            <label class="label">Password</label>
+            <div class="control has-icons-left">
+                <input class="input" type="password" placeholder="If this is still the default you're fired..." name="password">
+                <span class="icon is-small">
+                    <i class="fas fa-lock"></i>
+                </span>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="form-addresses columns is-mobile">
+    <div class="column">
+        <div class="field">
+            <label class="label">IP Address</label>
+            <div class="control has-icons-left">
+                <input class="input" type="text" placeholder="192.168.0.X" name="address">
+                <span class="icon is-small is-left">
+                    <i class="fas fa-desktop"></i>
+                </span>
+            </div>
+            <p class="help">Use the enter key to add single host, or enter a comma-separated list to add multiple</p>
+        </div>
+    </div>
+    <div class="column is-4" id="options">
+        <label class="label">Import Options</label>
+        <div class="field">
+            <div class="control">
+                <div class="columns">
+                    <div class="column">
+                        <button class="button is-info is-fullwidth" name="import-csv" onclick="importCSV()">
+                            CSV
+                        </button>
+                    </div>
+                    <div class="column">
+                        <button class="button is-info is-fullwidth" name="import-panorama" onclick="importPanorama()">
+                            Panorama
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="addresses"></section>
+<section class="form-ready">
+    <a class="button ready is-success" onclick="collectSamples()" name="ready" disabled>I'm Ready!</a>
+</section>
+</body>
+<script type="text/javascript" src="index.js"></script>
+</html>
