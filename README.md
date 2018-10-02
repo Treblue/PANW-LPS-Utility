@@ -49,6 +49,11 @@ bash "LPS Utility"
 ```
 
 #### Windows
-To be continued...
+1. Download the [application ZIP file](https://paloaltonetworks.box.com/s/py6cxghrwxgi1wzinorknc6z0sf3f4ar)
+2. Unzip the downloaded file using a tool such as WinRAR
+3. Navigate to the "LPS Utility-win32-ia32" folder inside of the unzipped "Windows-LPS-Utility" folder
+4. Double click the file called "LPS Utility.exe" to start the application
+5. If all goes well, you're done with the install!
+6. The next time you open the application, you will only need to double click the file.
 
 Thank you!
