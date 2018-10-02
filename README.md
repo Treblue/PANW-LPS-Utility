@@ -24,7 +24,7 @@ In order to install from prebuilt packages, follow the instructions for the oper
 1. Download the [application ZIP file](https://paloaltonetworks.box.com/s/py6cxghrwxgi1wzinorknc6z0sf3f4ar)
 2. Double click the downloaded ZIP file to unzip it
 3. Navigate to the "LPS Utility-darwin-x64" folder inside of the unzipped "Mac-LPS-Utility" folder
-4. Right click the file called "LPS Utility.app" and select "Open" when prompted
+4. Right click the file called "LPS Utility.app" and select "Open" for both prompts
 5. If all goes well, you're done with the install!
 6. The next time you open the application, you will only need to double click the file.
 
@@ -40,10 +40,14 @@ bash "LPS Utility"
 ```
 
 4. If all goes well, you're done with the install!
-5. The next time you open the application, you will need to navigate to the same location in a terminal and run the following command:
+5. The next time you open the application, you only need to run the following commands from the unzipped folder:
 
 ```bash
+cd "LPS Utility-linux-x64"
 bash "LPS Utility"
 ```
 
-Thank you!
+#### Windows
+To be continued...
+
+Thank you!s
