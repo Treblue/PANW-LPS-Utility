@@ -50,4 +50,4 @@ bash "LPS Utility"
 #### Windows
 To be continued...
 
-Thank you!s
+Thank you!
