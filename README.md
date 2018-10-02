@@ -36,6 +36,7 @@ In order to install from prebuilt packages, follow the instructions for the oper
 ```bash
 unzip "Linux-LPS-Utility.zip"
 cd "LPS Utility-linux-x64"
+chmod +x "LPS Utility"
 bash "LPS Utility"
 ```
 
