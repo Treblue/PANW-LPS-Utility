@@ -21,7 +21,7 @@ For more information on properly tuning your sample parameters, see the followin
 In order to install from prebuilt packages, follow the instructions for the operating system you are running:
 
 #### Mac
-1. Download the [application ZIP file](https://paloaltonetworks.box.com/s/py6cxghrwxgi1wzinorknc6z0sf3f4ar)
+1. Download the [application ZIP file](https://paloaltonetworks.box.com/s/ewnnlg829dp2larcyzsayq6ugtjvwnf1)
 2. Double click the downloaded ZIP file to unzip it
 3. Navigate to the "LPS Utility-darwin-x64" folder inside of the unzipped "Mac-LPS-Utility" folder
 4. Right click the file called "LPS Utility.app" and select "Open" for both prompts
@@ -29,7 +29,7 @@ In order to install from prebuilt packages, follow the instructions for the oper
 6. The next time you open the application, you will only need to double click the file.
 
 #### Linux
-1. Download the [application ZIP file](https://paloaltonetworks.app.box.com/s/0qtqudixkctynecb42uxggg4qheskvq9)
+1. Download the [application ZIP file](https://paloaltonetworks.box.com/s/r8j7geliu7u0xx13b1lgu6z6d2df638r)
 2. Open a terminal window and navigate to the folder containing the downloaded ZIP file
 3. Execute the following commands to unzip and run the application:
 
@@ -49,11 +49,29 @@ bash "LPS Utility"
 ```
 
 #### Windows
-1. Download the [application ZIP file](https://paloaltonetworks.box.com/s/py6cxghrwxgi1wzinorknc6z0sf3f4ar)
+1. Download the [application ZIP file](https://paloaltonetworks.box.com/s/xgn2taavr3ymm7099qtuyg0ymh6uft4g)
 2. Unzip the downloaded file using a tool such as WinRAR
 3. Navigate to the "LPS Utility-win32-ia32" folder inside of the unzipped "Windows-LPS-Utility" folder
 4. Double click the file called "LPS Utility.exe" to start the application
 5. If all goes well, you're done with the install!
 6. The next time you open the application, you will only need to double click the file.
+
+
+#### Build from Source
+If you would like to build the application directly from the source files, execute the following commands from a directory of your choosing:
+
+```bash
+git clone https://github.com/Treblue/PANW-LPS-Utility.git
+cd "PANW-LPS-Utility"
+npm install
+```
+
+And run one of the following commands based on your operating system to package the application:
+
+```bash
+npm run package-mac
+npm run package-linux
+npm run package-win
+```
 
 Thank you!
