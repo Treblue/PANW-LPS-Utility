@@ -29,7 +29,7 @@ In order to install from prebuilt packages, follow the instructions for the oper
 6. The next time you open the application, you will only need to double click the file.
 
 #### Linux
-1. Download the [application ZIP file](https://www.dropbox.com/s/y2ems23nflocpmt/Linux-LPS-Utility-1.zip?dl=1)
+1. Download the [application ZIP file](https://www.dropbox.com/s/y2ems23nflocpmt/Linux-LPS-Utility.zip?dl=1)
 2. Open a terminal window and navigate to the folder containing the downloaded ZIP file
 3. Execute the following commands to unzip and run the application:
 
@@ -49,7 +49,7 @@ bash "LPS Utility"
 ```
 
 #### Windows
-1. Download the [application ZIP file](https://www.dropbox.com/s/a8vaf60odxmfrf6/Windows-LPS-Utility-1.zip?dl=1)
+1. Download the [application ZIP file](https://www.dropbox.com/s/a8vaf60odxmfrf6/Windows-LPS-Utility.zip?dl=1)
 2. Unzip the downloaded file using a tool such as WinRAR
 3. Navigate to the "LPS Utility-win32-ia32" folder inside of the unzipped "Windows-LPS-Utility" folder
 4. Double click the file called "LPS Utility.exe" to start the application
