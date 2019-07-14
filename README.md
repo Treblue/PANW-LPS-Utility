@@ -21,7 +21,7 @@ For more information on properly tuning your sample parameters, see the followin
 In order to install from prebuilt packages, follow the instructions for the operating system you are running:
 
 #### Mac
-1. Download the [application ZIP file](https://paloaltonetworks.box.com/s/ewnnlg829dp2larcyzsayq6ugtjvwnf1)
+1. Download the [application ZIP file](https://www.dropbox.com/s/fz7ll5zgc0l7p6c/Mac-LPS-Utility.zip?dl=1)
 2. Double click the downloaded ZIP file to unzip it
 3. Navigate to the "LPS Utility-darwin-x64" folder inside of the unzipped "Mac-LPS-Utility" folder
 4. Right click the file called "LPS Utility.app" and select "Open" for both prompts
@@ -29,7 +29,7 @@ In order to install from prebuilt packages, follow the instructions for the oper
 6. The next time you open the application, you will only need to double click the file.
 
 #### Linux
-1. Download the [application ZIP file](https://paloaltonetworks.box.com/s/r8j7geliu7u0xx13b1lgu6z6d2df638r)
+1. Download the [application ZIP file](https://www.dropbox.com/s/y2ems23nflocpmt/Linux-LPS-Utility-1.zip?dl=1)
 2. Open a terminal window and navigate to the folder containing the downloaded ZIP file
 3. Execute the following commands to unzip and run the application:
 
@@ -49,7 +49,7 @@ bash "LPS Utility"
 ```
 
 #### Windows
-1. Download the [application ZIP file](https://paloaltonetworks.box.com/s/xgn2taavr3ymm7099qtuyg0ymh6uft4g)
+1. Download the [application ZIP file](https://www.dropbox.com/s/a8vaf60odxmfrf6/Windows-LPS-Utility-1.zip?dl=1)
 2. Unzip the downloaded file using a tool such as WinRAR
 3. Navigate to the "LPS Utility-win32-ia32" folder inside of the unzipped "Windows-LPS-Utility" folder
 4. Double click the file called "LPS Utility.exe" to start the application
